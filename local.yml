@@ -17,4 +17,3 @@
     - include: tasks/zsh-setup.yml
     - include: tasks/nvim-setup.yml
     - include: tasks/productivity-tools.yml
-    - include: tasks/lsp.yml
