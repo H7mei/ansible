@@ -15,7 +15,6 @@
     - include: tasks/node-setup.yml
     - include: tasks/npm-packages.yml
     - include: tasks/zsh-setup.yml
-    - include: tasks/personal-projects.yml
     - include: tasks/nvim-setup.yml
     - include: tasks/debugger.yml
     - include: tasks/dotfiles.yml
