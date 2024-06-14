@@ -10,10 +10,23 @@
         - install
         - core
   tasks:
-    - include: tasks/git-setup.yml
-    - include: tasks/core-setup.yml
-    - include: tasks/node-setup.yml
-    - include: tasks/npm-packages.yml
-    - include: tasks/zsh-setup.yml
-    - include: tasks/nvim-setup.yml
-    - include: tasks/productivity-tools.yml
+    - name: Include git setup tasks
+      include_tasks: tasks/git-setup.yml
+
+    - name: Include core setup tasks
+      include_tasks: tasks/core-setup.yml
+
+    - name: Include node setup tasks
+      include_tasks: tasks/node-setup.yml
+
+    - name: Include npm packages setup
+      include_tasks: tasks/npm-packages.yml
+
+    - name: Include zsh setup
+      include_tasks: tasks/zsh-setup.yml
+
+    - name: Include nvim setup
+      include_tasks: tasks/nvim-setup.yml
+
+    - name: Include productivity tools setup
+      include_tasks: tasks/productivity-tools.yml
